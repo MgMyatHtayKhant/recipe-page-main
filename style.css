@@ -1,0 +1,143 @@
+:root {
+  --body-bg-color: hsl(330, 100%, 98%);
+  --container-bg-color: hsl(0, 0%, 100%);
+  --preparation-color: hsl(332, 51%, 32%);
+  --heading-color: hsl(14, 45%, 36%);
+  --font-color: hsl(30, 10%, 34%);
+  --ov-heading-color: hsl(24, 5%, 18%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "outfit", sans-serif;
+  font-size: 16px;
+  color: var(--font-color);
+}
+
+body {
+  margin: 0;
+  background-color: var(--body-bg-color);
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 5.75rem auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: var(--container-bg-color);
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.overview-section .image {
+  border-radius: 1rem;
+}
+
+.overview-section .heading {
+  color: var(--ov-heading-color);
+  font-size: 2rem;
+  margin: 2rem 0 1.5rem;
+}
+
+.overview-section .description {
+  margin: 1.5rem 0;
+}
+
+.preparation {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background-color: var(--body-bg-color);
+}
+
+.preparation .sub-heading {
+  color: var(--preparation-color);
+  margin: 0;
+}
+
+.list {
+  padding: 0 0.5rem;
+  margin-bottom: 0;
+  list-style-position: inside;
+}
+
+.list li {
+  margin: 0.75rem 0;
+}
+
+.list li:last-child {
+  margin-bottom: 0;
+}
+
+.list li .f-span {
+  margin-left: 0.5rem;
+}
+
+.list li::marker {
+  color: var(--heading-color);
+  font-weight: bolder;
+  font-family: sans-serif;
+}
+
+.ingredients-section,
+.instructions-section {
+  padding: 0 0 1.5rem;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.nutrition-section .description {
+  margin-bottom: 1.5rem;
+}
+
+.nutrition-section .nutrition {
+  padding: 1rem 0;
+}
+
+.nutrition-section .nutrition:not(.nutrition-section .nutrition:last-child) {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.nutrition-section .nutrition .label {
+  display: inline-block;
+  width: 50%;
+  padding-left: 1.5rem;
+}
+
+.nutrition-section .nutrition .unit {
+  color: var(--heading-color);
+}
+
+/* Reusable Code */
+.heading {
+  font-weight: 400;
+  color: var(--heading-color);
+  font-family: "Young Serif", serif;
+}
+
+.heading:not(.overview-section .heading) {
+  margin: 1.5rem 0;
+}
+
+.bold,
+.unit {
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "outfit";
+  src: url("./assets/fonts/outfit/Outfit-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Young Serif";
+  src: url("./assets/fonts/young-serif/YoungSerif-Regular.ttf")
+    format("truetype");
+}
