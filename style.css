@@ -13,7 +13,7 @@
 
 html {
   font-family: "outfit", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   color: var(--font-color);
 }
 
@@ -29,16 +29,14 @@ img {
 
 .container {
   width: 100%;
-  max-width: 800px;
-  margin: 5.75rem auto;
-  padding: 2rem;
-  border-radius: 1rem;
+  padding: 0 0 2rem;
+  margin: 0;
   background-color: var(--container-bg-color);
-  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
-.overview-section .image {
-  border-radius: 1rem;
+section:not(:first-child),
+section:first-child > *:not(.image) {
+  margin-inline: 2rem;
 }
 
 .overview-section .heading {
@@ -139,15 +137,26 @@ img {
   font-weight: 700;
 }
 
-@media only screen and (max-width: 468px) {
+@media only screen and (min-width: 768px) {
   html {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .container {
-    margin: 0;
-    border: 0;
-    border-radius: 0;
+    max-width: 734px;
+    margin: 5.75rem auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+  }
+
+  section:not(:first-child),
+  section:first-child > *:not(.image) {
+    margin-inline: 0rem;
+  }
+
+  .overview-section .image {
+    border-radius: 1rem;
   }
 }
 

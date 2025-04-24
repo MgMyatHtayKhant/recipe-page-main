@@ -26,8 +26,8 @@ This is my fourth project. I love it. This project isn't similar to previous thr
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/MgMyatHtayKhant/recipe-page-main)
-- Live Site URL: [Add live site URL here](https://frontend-recipe-page-main.netlify.app/)
+- Solution URL: [Solution URL here](https://github.com/MgMyatHtayKhant/recipe-page-main)
+- Live Site URL: [Live site URL here](https://frontend-recipe-page-main.netlify.app/)
 
 ## My process
 
@@ -44,7 +44,7 @@ I learned about how to do naming and labeling in html and css a lot.
 ## Author
 
 - Website - [Saul](https://saul-homepage.netlify.app/)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Saul](https://www.frontendmentor.io/profile/MgMyatHtayKhant)
 
 ## Acknowledgments
 
